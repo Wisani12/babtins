@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Services - BHI</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                background-image: url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg'); /* Background image URL */
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            /* Header Styling */
+            header {
+                position: relative;
+                padding: 60px 20px;
+                text-align: center;
+                color: #ffffff; /* White text color */
+            }
+
+            header::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+                z-index: -1; /* Make sure the overlay is behind the content */
+            }
+
+            header img {
+                width: 100px;
+                height: auto;
+            }
+
+            /* Main Content */
+            .content {
+                text-align: center;
+                padding: 50px 20px;
+                background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+                border-radius: 10px; /* Rounded corners for the content box */
+                color: #003366; /* Dark Blue */
+                margin: 40px auto;
+                width: 80%;
+            }
+
+            .content h1 {
+                font-size: 36px;
+                color: #003366;
+            }
+
+            .content p {
+                font-size: 18px;
+                color: #555;
+                margin-bottom: 20px;
+            }
+
+            .content .btn {
+                background-color: #003366; /* Dark Blue */
+                color: white;
+                padding: 10px 20px;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .content .btn:hover {
+                background-color: #0056b3;
+            }
+
+            /* Footer Styling */
+            footer {
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+                color: #333;
+            }
+
+            footer i {
+                margin: 0 15px;
+                font-size: 24px;
+                color: #003366;
+                cursor: pointer;
+            }
+
+            footer i:hover {
+                color: #0056b3;
+            }
+
+            footer .address {
+                margin-top: 10px;
+                color: #333;
+                font-size: 14px;
+            }
+
+            /* Footer Navigation Bar */
+            .footer-nav ul {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                list-style: none;
+            }
+
+            .footer-nav li {
+                margin: 0 10px;
+            }
+
+            .footer-nav a {
+                text-decoration: none;
+                color: #003366;
+                font-size: 16px;
+            }
+
+            .footer-nav a:hover {
+                color: #0056b3;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 768px) {
+                .content {
+                    width: 90%;
+                }
+
+                .footer-nav ul {
+                    flex-direction: column; /* Stack items vertically on small screens */
+                    align-items: center;
+                }
+
+                .footer-nav li {
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+</head>
+<body>
+
+        <!-- Header Section -->
+        <header>
+                <img src="file:///C:/Users/MKWAWANA_INC/OneDrive/Desktop/sitbabtin/BHI LOGO/Capture.JPG" alt="Company Logo">
+                <h1>Our Services</h1>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+                <h1>Our Products</h1>
+                <p>All our medical devices are FDA approved, and we work in collaboration with a USA-based company, Simedicals Supply.</p>
+                <p>For more information on our products, please visit our partner's website.</p>
+                <a href="https://www.simedicalsupply.com" target="_blank">
+                    <button class="btn">Visit Our Partner's Website</button>
+                </a>
+        </div>
+
+        <!-- Footer Section -->
+<footer>
+    <p>Follow Us</p>
+    <div>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <!-- Footer Navigation Bar (Horizontal) -->
+    <nav class="footer-nav">
+       <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="CS.html">Services</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="address">
+        <p><i class="fa fa-map-marker-alt"></i> 1234 Business Road, Johannesburg, South Africa</p>
+        <p><i class="fa fa-envelope"></i> Email: info@company.com | <i class="fa fa-phone-alt"></i> Phone: +27 11 123 4567</p>
+    </div>
+</footer>
+
+<script>
+    // Wait for the page to be fully loaded
+    window.addEventListener("load", function () {
+        document.body.classList.add("fade-in");
+    });
+
+    // Optional: If you want to remove the transition effect after leaving the page
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.remove("fade-in");
+    });
+</script>
+
+
+<!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</body>
+</html>
